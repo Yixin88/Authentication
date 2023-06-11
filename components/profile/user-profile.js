@@ -1,8 +1,10 @@
+import { getSession } from "next-auth/react";
+import { useState, useEffect } from 'react';
+
 import ProfileForm from './profile-form';
 import classes from './user-profile.module.css';
 
 function UserProfile() {
-  // Redirect away if NOT auth
 
   return (
     <section className={classes.profile}>
